@@ -2,15 +2,16 @@
 
 This repository is a **ready-to-use starter kit** for the **Thermal Object Detection Challenge** of the **MaCVi 2026 workshop at CVPR 2026**.
 
-![Example thermal detection](assets/example_detection.png)
+<p align="center">
+  <img src="assets/thermal_challenge_example_train.png" alt="Example thermal detection" width="400">
+</p>
 
 It provides:
 - The **COCO-style dataset split files** (`instances_{train,val,test}.json`) and the expected folder layout for images.
 - A **baseline MMDetection setup** (Faster R-CNN R50-FPN, COCO-pretrained).
 - A **robust installation script** for **CUDA 13.0 + PyTorch 2.9.1** that builds **MMCV from source** (with CUDA ops) to avoid common compatibility pitfalls.
 
-Challenge page (MaCVi):  
-https://macvi.org/workshop/cvpr/challenges/thermal_object_detection
+[Thermal Object Detection Challenge page (MaCVi 2025 @ CVPR)](https://macvi.org/workshop/cvpr/challenges/thermal_object_detection)
 
 ---
 
