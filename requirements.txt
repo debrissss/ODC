@@ -1,0 +1,17 @@
+# OpenMMLab installer
+openmim==0.3.9
+
+# Core runtime deps
+numpy>=1.23
+pyyaml
+tqdm
+rich
+
+# Images + COCO
+opencv-python
+pillow
+pycocotools
+
+# Visualization / metrics helpers
+matplotlib
+terminaltables

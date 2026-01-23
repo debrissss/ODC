@@ -55,7 +55,6 @@ After extraction, the dataset should be laid out as:
 data/
   instances_train.json
   instances_val.json
-  instances_test.json
   train/
     *.png
   val/
@@ -104,14 +103,14 @@ This runs inference and COCO evaluation using the configuration in the config fi
 
 ## Export COCO predictions for submission
 
-The provided configuration uses a CocoMetric evaluator with an output prefix:
+The provided configuration uses a CocoMetric evaluator with an output prefix and an emtpy test annotations file to make the evaluator read the images:
 ```bash
 test_evaluator = dict(
     type='CocoMetric',
-    ann_file=data_root + 'instances_test.json',
-    metric='bbox',
-    format_only=False,
-    outfile_prefix='results_test'
+    ann_file='data/instances_test_empty.json',
+    format_only=True,
+    outfile_prefix='results_test',
+    backend_args=backend_args
 )
 ```
 
