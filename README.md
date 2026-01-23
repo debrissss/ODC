@@ -46,7 +46,7 @@ Advanced users may alternatively follow the official installation guides of PyTo
 ## Dataset
 
 The challenge dataset is distributed as a GitHub Release asset (zip).
-1. Download the dataset zip from the Releases section of this repository.
+1. Download the dataset zip from the [Releases section](https://github.com/alemamm/macvi26-thermal-od/releases/tag/dataset-v1) of this repository.
 2. Extract it into the repository root.
 
 After extraction, the dataset should be laid out as:
