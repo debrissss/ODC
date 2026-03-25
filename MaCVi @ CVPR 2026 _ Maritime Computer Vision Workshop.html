@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)https://macvi.org/workshop/cvpr/challenges/thermal_object_detection -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="CO8zJIZNIiRneqHB5sLisc3PuFn7I1IzCm01pWgiJsA">
+    
+    
+
+    <title>MaCVi @ CVPR 2026 | Maritime Computer Vision Workshop</title>
+    <meta name="description" content="The 4th Workshop on Maritime Computer Vision (MaCVi) at CVPR 2026. Featuring 6 benchmark challenges: Vision-Chart Data Association, Thermal Obstacle Detection, LaRS Panoptic Segmentation, Multimodal Segmentation, Embedded Semantic Segmentation, and Generalist Meta Challenge.">
+    <link rel="canonical" href="https://macvi.org/workshop/cvpr">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://macvi.org/workshop/cvpr">
+    <meta property="og:title" content="MaCVi @ CVPR 2026 | Maritime Computer Vision Workshop">
+    <meta property="og:description" content="The 4th Workshop on Maritime Computer Vision (MaCVi) at CVPR 2026. Featuring 6 benchmark challenges: Vision-Chart Data Association, Thermal Obstacle Detection, LaRS Panoptic Segmentation, Multimodal Segmentation, Embedded Semantic Segmentation, and Generalist Meta Challenge.">
+    <meta property="og:image" content="https://macvi.org/images/forward_then_reverse_3s_tiny.gif">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://macvi.org/workshop/cvpr">
+    <meta property="twitter:title" content="MaCVi @ CVPR 2026 | Maritime Computer Vision Workshop">
+    <meta property="twitter:description" content="The 4th Workshop on Maritime Computer Vision (MaCVi) at CVPR 2026. Featuring 6 benchmark challenges: Vision-Chart Data Association, Thermal Obstacle Detection, LaRS Panoptic Segmentation, Multimodal Segmentation, Embedded Semantic Segmentation, and Generalist Meta Challenge.">
+    <meta property="twitter:image" content="https://macvi.org/images/forward_then_reverse_3s_tiny.gif">
+
+    <link rel="stylesheet" type="text/css" href="./MaCVi @ CVPR 2026 _ Maritime Computer Vision Workshop_files/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./MaCVi @ CVPR 2026 _ Maritime Computer Vision Workshop_files/style.css">
+    
+    
+        
+            <link rel="stylesheet" type="text/css" href="./MaCVi @ CVPR 2026 _ Maritime Computer Vision Workshop_files/about.css">
+        
+            <link rel="stylesheet" type="text/css" href="./MaCVi @ CVPR 2026 _ Maritime Computer Vision Workshop_files/wacv23.css">
+        
+    
+
+    <!-- Structured Data -->
+    
+        <script type="application/ld+json">
+            {"@context":"https://schema.org","@type":"Event","name":"4th Workshop on Maritime Computer Vision (MaCVi) at CVPR 2026","startDate":"2026-06-03","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","eventStatus":"https://schema.org/EventScheduled","location":{"@type":"Place","name":"CVPR 2026 Venue","address":{"@type":"PostalAddress","addressLocality":"Nashville","addressRegion":"TN","addressCountry":"US"}},"description":"The 4th Workshop on Maritime Computer Vision (MaCVi) brings together computer vision, robotics, and marine science to advance perception for autonomous surface vessels.","organizer":{"@type":"Organization","name":"MaCVi","url":"https://macvi.org"}}
+        </script>
+    
+</head>
+
+
+<body>
+
+    
+
+    
+
+    <link rel="stylesheet" type="text/css" href="./MaCVi @ CVPR 2026 _ Maritime Computer Vision Workshop_files/menu.css">
+    <link rel="stylesheet" type="text/css" href="./MaCVi @ CVPR 2026 _ Maritime Computer Vision Workshop_files/bootstrap-icons.css">
+
+
+<div class="container mt-5 mb-3 p-0">
+    <div class="row">
+        <div class="col-sm d-flex flex-wrap justify-content-between align-items-center">
+            <div class="d-flex flex-wrap align-items-center gap-1 mb-2">
+                <a href="https://uni-tuebingen.de/" target="_blank"><img src="./MaCVi @ CVPR 2026 _ Maritime Computer Vision Workshop_files/logo_uni.svg" style="height: 20px;" alt="University Tuebingen"></a>
+                <a href="https://www.uni-lj.si/en" target="_blank"><img src="./MaCVi @ CVPR 2026 _ Maritime Computer Vision Workshop_files/lju.png" style="height: 20px;" alt="University of Ljubljana"></a>
+                <a href="https://getalookout.com/" target="_blank"><img src="./MaCVi @ CVPR 2026 _ Maritime Computer Vision Workshop_files/lookout.png" style="height: 16px;" alt="LOOKOUT"></a>
+                <a href="https://www.luxonis.com/" target="_blank"><img src="./MaCVi @ CVPR 2026 _ Maritime Computer Vision Workshop_files/luxonis_logo.png" style="height: 14px;" alt="Luxonis"></a>
+                <a href="https://shield.ai/" target="_blank"><img src="./MaCVi @ CVPR 2026 _ Maritime Computer Vision Workshop_files/SAI-Logo-Horizontal-Black.jpg" style="height: 14px;" alt="Shield AI"></a>
+                <a href="https://www.catskill.ai/" target="_blank"><img src="./MaCVi @ CVPR 2026 _ Maritime Computer Vision Workshop_files/catskill_logo.png" style="height: 16px;" alt="Catskill AI"></a>
+                <a href="https://vt.edu/" target="_blank"><img src="./MaCVi @ CVPR 2026 _ Maritime Computer Vision Workshop_files/vt.png" style="height: 20px;" alt="Virginia Tech"></a>
+                <a href="https://home.dartmouth.edu/" target="_blank"><img src="./MaCVi @ CVPR 2026 _ Maritime Computer Vision Workshop_files/dartmouth.png" style="height: 20px;" alt="Dartmouth College"></a>
+                <a href="https://www.hsu-hh.de/" target="_blank"><img src="./MaCVi @ CVPR 2026 _ Maritime Computer Vision Workshop_files/hsu.png" style="height: 20px;" alt="Helmut-Schmidt-Universität Hamburg"></a>
+                <a href="https://www.fbk.eu/en/" target="_blank"><img src="./MaCVi @ CVPR 2026 _ Maritime Computer Vision Workshop_files/fbk.png" style="height: 24px;" alt="FBK"></a>
+                <a href="https://www.kit.edu/" target="_blank"><img src="./MaCVi @ CVPR 2026 _ Maritime Computer Vision Workshop_files/kit.svg" style="height: 20px;" alt="KIT"></a>
+                <a href="https://www.southampton.ac.uk/" target="_blank"><img src="./MaCVi @ CVPR 2026 _ Maritime Computer Vision Workshop_files/south.png" style="height: 20px;" alt="Southampton"></a>
+                <a href="https://www.oulu.fi/en" target="_blank"><img src="./MaCVi @ CVPR 2026 _ Maritime Computer Vision Workshop_files/fin.png" style="height: 24px;" alt="Oulu"></a>
+                <a href="https://www.ulisboa.pt/" target="_blank"><img src="./MaCVi @ CVPR 2026 _ Maritime Computer Vision Workshop_files/bigu.png" style="height: 24px;" alt="Lisboa"></a>
+                <a href="https://cevi.co.in/" target="_blank"><img src="./MaCVi @ CVPR 2026 _ Maritime Computer Vision Workshop_files/cevi.png" style="height: 24px;" alt="CEVI"></a>
+                <a href="https://www.kletech.ac.in/" target="_blank"><img src="./MaCVi @ CVPR 2026 _ Maritime Computer Vision Workshop_files/kletech.jpeg" style="height: 20px;" alt="KLE Tech"></a>
+                <a href="https://www.bmwk.de/" target="_blank"><img src="./MaCVi @ CVPR 2026 _ Maritime Computer Vision Workshop_files/bmwi.svg.png" style="height: 24px;" alt="BMWi"></a>
+            </div>
+            <div class="btn-group" id="userButtons" role="group" aria-label="User buttons">
+                 <a href="https://macvi.org/upload" class="btn btn-outline-dark align-items-center" role="button" aria-pressed="true">
+         <!--Log-In-Logo-->
+         <i class="bi bi-upload"></i>
+          Upload
+ </a>
+
+
+                
+                     <a href="https://macvi.org/login" class="btn btn-outline-dark align-items-center">
+    <!--Log-In-Logo-->
+    <i class="bi bi-box-arrow-in-right"></i>
+    Login
+ </a>
+
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--                 {name: 'Workshop 2023', href: '/wacv23'},];  -->
+
+<div class="container-fluid p-0 sticky-top">
+<nav class="mainMenu navbar navbar-expand-lg bg-primary navbar-dark" data-bs-theme="dark">
+    <div class="container">
+        <a class="navbar-brand" href="https://macvi.org/">MaCVi</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                
+                
+                      
+                        <li class="nav-item">
+                            <a href="https://macvi.org/explore" class="nav-link ">  Explore</a>
+                        </li>
+                    
+                
+                      
+                        <li class="nav-item">
+                            <a href="https://macvi.org/industry" class="nav-link ">  Industry</a>
+                        </li>
+                    
+                
+                      
+                        <li class="nav-item">
+                            <a href="https://macvi.org/community" class="nav-link ">  Community</a>
+                        </li>
+                    
+                
+                      
+                        <li class="nav-item">
+                            <a href="https://macvi.org/leaderboard" class="nav-link ">  Leaderboard</a>
+                        </li>
+                    
+                
+                      
+                        <li class="nav-item">
+                            <a href="https://macvi.org/dataset" class="nav-link ">  Datasets</a>
+                        </li>
+                    
+                
+                      
+                        <li class="nav-item">
+                            <a href="https://macvi.org/about" class="nav-link ">  About</a>
+                        </li>
+                    
+                
+                      
+                        <li class="nav-item">
+                            <a href="https://macvi.org/faq" class="nav-link ">  FAQ</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " href="https://macvi.org/workshop/cvpr/challenges/thermal_object_detection#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                MaCVi @ WACV
+                            </a>
+                            <ul class="dropdown-menu">
+                                
+                                    
+                                        <li><a class="dropdown-item" href="https://macvi.org/workshop/macvi25">MaCVi 2025</a></li>
+                                    
+                                
+                                    
+                                        <li><a class="dropdown-item" href="https://macvi.org/workshop/macvi24">MaCVi 2024</a></li>
+                                    
+                                
+                                    
+                                        <li><a class="dropdown-item" href="https://macvi.org/workshop/macvi23">MaCVi 2023</a></li>
+                                    
+                                
+                            </ul>
+                        </li>          
+                    
+                
+                      
+                        <li class="nav-item">
+                            <a href="https://macvi.org/workshop/bts24" class="nav-link ">  MaCVi @ BTS</a>
+                        </li>
+                    
+                
+                      
+                        <li class="nav-item">
+                            <a href="https://macvi.org/workshop/cvpr" class="nav-link active">  MaCVi @ CVPR <small><span class="badge rounded-pill bg-danger p-1 align-top"><i class="bi bi-bell blink"></i></span></small></a>
+                        </li>
+                    
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+    
+        <nav class="subMenu navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                
+                    <span class="navbar-brand">MaCVi @ CVPR</span>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCvpr" aria-controls="navbarCvpr" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCvpr">
+                    <ul class="navbar-nav">
+                        
+                            <li class="nav-item">
+                                <a href="https://macvi.org/workshop/cvpr" class="nav-link ">Home</a>
+                            </li>
+                        
+                            <li class="nav-item">
+                                <a href="https://macvi.org/workshop/cvpr/participate" class="nav-link ">Participate</a>
+                            </li>
+                        
+                            <li class="nav-item">
+                                <a href="https://macvi.org/workshop/cvpr/challenges" class="nav-link active">Challenges</a>
+                            </li>
+                        
+                            <li class="nav-item">
+                                <a href="https://macvi.org/workshop/cvpr/program" class="nav-link ">Program</a>
+                            </li>
+                        
+                            <li class="nav-item">
+                                <a href="https://macvi.org/workshop/cvpr/people" class="nav-link ">People</a>
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+
+
+</div>
+
+<div class="mt-4"></div>
+
+<div class="container"> 
+
+    
+    
+      
+      
+      
+    
+
+    
+    
+    
+    
+        
+        
+
+    
+    
+    
+</div>
+
+<script type="module" src="./MaCVi @ CVPR 2026 _ Maritime Computer Vision Workshop_files/main.js"></script>
+
+
+    <div class="container"> 
+        <h1 class="text-dark ">Maritime Computer Vision Workshop @ CVPR 2026</h1>
+        <div class="border-top border-2 border-light mb-5"></div>
+
+
+        <p><a href="https://macvi.org/workshop/cvpr/challenges">Challenges</a> / <a href="https://macvi.org/workshop/cvpr/challenges/thermal_object_detection">Thermal Object Detection</a></p>
+
+<h2 id="thermal-object-detection">Thermal Object Detection Challenge</h2>
+
+<p>
+    Quick links:
+    <a class="btn me-2 btn-sm btn-outline-primary" role="button" href="https://github.com/alemamm/macvi26-thermal-od">
+        <i class="bi bi-cloud-arrow-down"></i> Challenge code &amp; data
+    </a>
+    <a class="btn me-2 btn-sm btn-outline-primary" role="button" href="https://macvi.org/upload?track=Thermal%20Object%20Detection">
+        <i class="bi bi-cloud-plus"></i> Submit
+    </a>
+    <a class="btn me-2 btn-sm btn-outline-primary" role="button" href="https://macvi.org/leaderboard/surface/thermalod/thermal-object-detection">
+        <i class="bi bi-trophy"></i> Leaderboard
+    </a>
+    <a class="btn me-2 btn-sm btn-outline-primary" role="button" href="https://doi.bsh.de/10.60751/z1w9-t249">
+        <i class="bi bi-cloud-arrow-down"></i> Source dataset paper
+    </a>
+    <a class="btn me-2 btn-sm btn-outline-primary" role="button" href="https://groups.google.com/g/macvi-support">
+        <i class="bi bi-person"></i> Ask for help
+    </a>
+</p>
+
+<center>
+    <img class="each" src="./MaCVi @ CVPR 2026 _ Maritime Computer Vision Workshop_files/thermal_challenge_example_train.png" width="70%">
+</center>
+
+<h4 id="tldr">Quick Start</h4>
+<ol>
+    <li>Download the <a href="https://github.com/alemamm/macvi26-thermal-od">ready-to-use challenge dataset</a> (thermal infrared images).</li>
+    <li>Train your detector on the training split and tune it on the validation split.</li>
+    <li>Create a COCO-style JSON with predictions for the test set and <a href="https://macvi.org/upload?track=Thermal%20Object%20Detection">upload it to the evaluation server</a>.</li>
+</ol>
+
+<h4>Prize</h4>
+<p>The top team will win an <b>NVIDIA RTX 5080</b> GPU, sponsored by <a href="https://www.catskill.ai/">catskill</a>. Check the terms and conditions below.</p>
+
+<div class="border-top border-2 border-light mb-5"></div>
+
+<h4 id="overview">Overview</h4>
+<p>
+    Night-time and low-visibility conditions are critical for autonomous and assisted navigation of unmanned surface vehicles (USVs).
+    This challenge focuses on <b>object detection in thermal infrared (IR)</b> imagery, encouraging methods robust to non-daylight environments.
+</p>
+<p>
+    The challenge is based on the <i>Maritime Collision Avoidance Dataset Germany, English Channel, and The Netherlands</i>
+    (Gorczak et al.), recorded in German, British, and Dutch waters (2023–2025) and originally annotated using a COLREG-based taxonomy.
+    For this challenge we use <b>thermal infrared (IR) images only</b>.
+</p>
+
+<div class="border-top border-2 border-light mb-5"></div>
+
+<h4 id="task">Task</h4>
+<p>
+    Given a thermal infrared (IR) image, predict <b>axis-aligned bounding boxes</b> and a <b>class label</b> for each detection.
+</p>
+<p>
+    The challenge uses <b>two classes</b>:
+</p>
+<ul>
+    <li><b>Vessel</b></li>
+    <li><b>Navigational object</b></li>
+</ul>
+
+<div class="border-top border-2 border-light mb-5"></div>
+
+<h4 id="dataset">Dataset</h4>
+<p>
+    The challenge dataset is derived from the <i>Maritime Collision Avoidance Dataset Germany, English Channel, and The Netherlands</i>
+    (Gorczak et al.). We use <b>thermal infrared (IR) images only</b> and keep the original <b>train/validation split</b>.
+    The new <b>test split</b> is provided as images only (labels withheld) and is used for ranking.
+</p>
+
+<p>
+    We provide a <b><a href="https://github.com/alemamm/macvi26-thermal-od">ready-to-use challenge dataset</a></b> that already includes all modifications described below. Participants do <b>not</b> need to retrieve the original dataset and apply
+    preprocessing themselves.
+</p>
+
+<h5 class="text-dark mb-2">Class mapping</h5>
+<p>
+    The source dataset follows a COLREG-based taxonomy with five classes. For this challenge we simplify the label space to mitigate class imbalance and ambiguity in thermal IR imagery and enable are robst benchmark:
+</p>
+<ul>
+    <li><b>Vessel</b> = power-driven vessel + sailboat</li>
+    <li><b>Navigational object</b> = seamark + obstacle</li>
+    <li><b>Dropped:</b> seaplane (extremely rare)</li>
+</ul>
+
+<h5 class="text-dark mb-2">Preprocessing</h5>
+<ul>
+    <li>
+        <b>Thermal polarity normalization:</b> some IR images in the source dataset use inverted thermal scaling; we convert all images
+        so that <b>hotter regions correspond to higher pixel values</b>.
+    </li>
+</ul>
+
+<h5 class="text-dark mb-2">Annotation counts (after merging)</h5>
+<ul>
+    <li><b>Train:</b> vessel = 914, navigational object = 1,139</li>
+    <li><b>Validation:</b> vessel = 222, navigational object = 253</li>
+</ul>
+
+<div class="border-top border-2 border-light mb-5"></div>
+
+<h4 id="submission">Submission format</h4>
+<p>
+    Participants will run inference on the <b>test images</b> (labels are not provided) and submit a single
+    <b>COCO-style JSON</b> containing the predicted bounding boxes, class labels, and confidence scores.
+</p>
+<p>
+    The JSON is uploaded to the evaluation server, which computes metrics automatically using the COCO evaluation protocol.
+    A sample submission file is available in the <a href="https://github.com/alemamm/macvi26-thermal-od">GitHub repository</a>.
+</p>
+
+<div class="border-top border-2 border-light mb-5"></div>
+
+<h4 id="evaluation-metrics">Evaluation Metrics</h4>
+<p>
+    We evaluate predictions using the commonly used COCO object detection protocol and report:
+    <b>AP</b>, <b>AP<sub>50</sub></b>, <b>AP<sub>75</sub></b>, <b>AR<sub>1</sub></b>, and <b>AR<sub>10</sub></b>.
+</p>
+<p>
+    The determining metric for winning will be <b>AP</b>. In case of a draw, <b>AP<sub>50</sub></b> counts.
+</p>
+
+<div class="border-top border-2 border-light mb-5"></div>
+
+<h4 id="baselines">Baselines</h4>
+<p>
+    We provide a baseline model (Faster R-CNN with ResNet-50 backbone pretrained on COCO) and <a href="https://github.com/alemamm/macvi26-thermal-od">starter code</a> to support participation and reproducibility:
+
+</p><div class="border-top border-2 border-light mb-5"></div>
+
+<h4 id="participate">Participate</h4>
+<ol>
+    <li>Download the <a href="https://github.com/alemamm/macvi26-thermal-od">challenge dataset</a>.</li>
+    <li>Train on the training split and tune hyperparameters on the validation split.</li>
+    <li>Generate predictions for the test split and export them as a COCO-style JSON file.</li>
+    <li><a href="https://macvi.org/upload?track=Thermal%20Object%20Detection">Upload your JSON</a> to the evaluation server.
+        <ul>
+            <li>After submission, your results will be evaluated on the server. Please refresh the dashboard page to see results.
+                The dashboard will also display potential errors in case of failed submissions (hover over the error icon).</li>
+        </ul>
+    </li>
+</ol>
+
+<div class="border-top border-2 border-light mb-5"></div>
+
+<h4 id="terms-and-conditions">Terms and Conditions</h4>
+<ul>
+    <li>Submissions must be made before the challenge deadline listed on the <a href="https://macvi.org/workshop/cvpr/participate">participation page</a>.
+        Submissions made after the deadline will not count towards the final results of the challenge.</li>
+    <li>Submissions are limited to <strong>three</strong> per day. Failed submissions do not count towards this limit.</li>
+    <li>The winner is determined by the highest <b>AP</b> score (<b>AP<sub>50</sub></b> in case of tie).</li>
+    <li>Only one model per team per track counts toward the final ranking. If a team submits multiple models,
+        only the best-scoring submission is used.</li>
+    <li>You are allowed to use additional publicly available data for training, but must disclose it at the time of upload.
+        This also applies to pre-training.</li>
+    <li>Please report the speed of your method (FPS) and indicate the hardware used.</li>
+    <li>In order for your method to be considered for the winning positions and included in the results paper, you will
+        be required to submit a short report describing your method. More information in regards to this will be
+        released towards the end of the challenge.</li>
+    <li>The top 3 teams will be featured as co-authors in the challenge summary paper, which will be included
+        in the CVPR 2026 Workshop Proceedings and IEEE Xplore.</li>
+    <li>Note that we (as organizers) may upload models for this challenge, BUT we do not compete for a winning position.
+        Our models merely serve as references on the leaderboard.</li>
+</ul>
+
+<p>
+    If you have questions, please use the <a href="https://groups.google.com/g/macvi-support">MaCVi Support forum</a>.
+</p>
+
+
+
+      </div>
+    
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="./MaCVi @ CVPR 2026 _ Maritime Computer Vision Workshop_files/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./MaCVi @ CVPR 2026 _ Maritime Computer Vision Workshop_files/style.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<div class="container mt-7 p-0 pb-8">
+    <div class="border-top border-2 border-light mb-5"></div>
+</div>
+
+
+</body></html>
