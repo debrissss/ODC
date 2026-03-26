@@ -45,3 +45,18 @@ tta_pipeline = [
             ]
         ])
 ]
+
+# === 关键：切换到 Val 集进行指标验证 ===
+test_dataloader = dict(
+    dataset=dict(
+        ann_file='instances_val.json',
+        data_prefix=dict(img='val/'),
+        pipeline=tta_pipeline))
+
+test_evaluator = dict(
+    type='CocoMetric',
+    ann_file='data/instances_val.json',
+    metric='bbox',
+    format_only=False)
+
+
