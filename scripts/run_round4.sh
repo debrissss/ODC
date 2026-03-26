@@ -19,6 +19,7 @@ echo "Round 4c: Round 2 + Soft-NMS & TTA"
 echo "=============================="
 # 注意：作为推理端增强，方案 C 不需要训练，但由于继承了 ablation_round2_best.py，
 # 建议加载 Round 2 的最佳权重进行测试
-# 用法举例：python tools/test.py configs/faster_rcnn/round4_r50_inference_plus.py [ROUND2_CHECKPOINT] --tta
+# 用法举例：python tools/test.py configs/faster_rcnn/round4_r50_inference_plus.py \
+#     work_dirs/ablation_round2_best/epoch_36.pth --tta
 
 echo "✅ Round 4 配置文件已准备就绪！"
