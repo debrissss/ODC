@@ -2,6 +2,10 @@
 import argparse
 import os
 import os.path as osp
+import sys
+
+# 将项目根目录加入 sys.path，确保 custom_modules 等自定义包可被正确导入
+sys.path.insert(0, osp.abspath(osp.join(osp.dirname(__file__), '..')))
 
 from mmengine.config import Config, DictAction
 from mmengine.registry import RUNNERS
