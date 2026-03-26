@@ -73,6 +73,7 @@ def parse_args():
         choices=['none', 'pytorch', 'slurm', 'mpi'],
         default='none',
         help='job launcher')
+    parser.add_argument('--tta', action='store_true', help='Test time augmentation')
     parser.add_argument('--local_rank', type=int, default=0)
     args = parser.parse_args()
     if 'LOCAL_RANK' not in os.environ:
@@ -97,6 +98,15 @@ def main():
     elif cfg.get('work_dir', None) is None:
         cfg.work_dir = osp.join('./work_dirs',
                                 osp.splitext(osp.basename(args.config))[0])
+
+    if args.tta:
+        if 'tta_model' not in cfg:
+            raise RuntimeError('Cannot find "tta_model" in config.')
+        if 'tta_pipeline' not in cfg:
+            raise RuntimeError('Cannot find "tta_pipeline" in config.')
+
+        cfg.model = Config(dict(**cfg.tta_model, module=cfg.model))
+        cfg.test_dataloader.dataset.pipeline = cfg.tta_pipeline
 
     # Load checkpoint
     cfg.load_from = args.checkpoint
