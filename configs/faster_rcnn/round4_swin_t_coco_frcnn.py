@@ -8,7 +8,7 @@ _base_ = [
 # Round 4 方案 B：Swin-T Faster R-CNN + COCO 全量预训练
 # 加载官方在 COCO 训练好的 Swin-T Mask R-CNN 权重（仅取 Backbone, Neck, Head）
 
-load_from = 'https://download.openmmlab.com/mmdetection/v2.0/swin/mask_rcnn_swin-t-p4-w7_fpn_1x_coco_20210902_120937-9d6b7cfa.pth'
+load_from = 'https://download.openmmlab.com/mmdetection/v2.0/swin/mask_rcnn_swin-t-p4-w7_fpn_1x_coco/mask_rcnn_swin-t-p4-w7_fpn_1x_coco_20210902_120937-9d6b7cfa.pth'
 
 model = dict(
     backbone=dict(
