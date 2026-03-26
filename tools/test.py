@@ -105,7 +105,7 @@ def main():
         if 'tta_pipeline' not in cfg:
             raise RuntimeError('Cannot find "tta_pipeline" in config.')
 
-        cfg.model = Config(dict(**cfg.tta_model, module=cfg.model))
+        cfg.model = dict(**cfg.tta_model, module=cfg.model)
         cfg.test_dataloader.dataset.pipeline = cfg.tta_pipeline
 
     # Load checkpoint
