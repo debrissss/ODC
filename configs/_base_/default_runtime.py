@@ -21,4 +21,5 @@ log_processor = dict(type='LogProcessor', window_size=50, by_epoch=True)
 
 log_level = 'INFO'
 load_from = None
-resume = False
+# 启用自动断点续训：如果 work_dir 下存在 last_checkpoint 文件则自动恢复，否则从头训练
+resume = True

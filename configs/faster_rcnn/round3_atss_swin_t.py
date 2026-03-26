@@ -87,6 +87,7 @@ optim_wrapper = dict(
             'relative_position_bias_table': dict(decay_mult=0.),
             'norm': dict(decay_mult=0.)}),
     optimizer=dict(
+        _delete_=True,
         type='AdamW',
         lr=0.0001,
         betas=(0.9, 0.999),
