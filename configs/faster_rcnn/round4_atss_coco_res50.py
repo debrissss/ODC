@@ -7,7 +7,7 @@ _base_ = [
 # Round 4 方案 A：ATSS + COCO 全量预训练
 # 加载在 COCO 上完整训练好的 ATSS 模型权重，提供强大的检测头先验
 
-load_from = 'https://download.openmmlab.com/mmdetection/v2.0/atss/atss_r50_fpn_1x_coco/atss_r50_fpn_1x_coco_20200209-a4647a75.pth'
+load_from = 'https://download.openmmlab.com/mmdetection/v2.0/atss/atss_r50_fpn_1x_coco/atss_r50_fpn_1x_coco_20200209-985f7bd0.pth'
 
 model = dict(
     type='ATSS',
