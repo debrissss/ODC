@@ -21,5 +21,6 @@ log_processor = dict(type='LogProcessor', window_size=50, by_epoch=True)
 
 log_level = 'INFO'
 load_from = None
-# 启用自动断点续训：如果 work_dir 下存在 last_checkpoint 文件则自动恢复，否则从头训练
-resume = True
+# 默认关闭自动断点续训，避免与预训练权重加载冲突。
+# 如需恢复训练，请在运行 train.py 时增加 --resume 参数
+resume = False
