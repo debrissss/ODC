@@ -14,6 +14,7 @@ test_dataloader = dict(
 test_evaluator = dict(
     type='CocoMetric',
     ann_file='data/instances_test_empty.json',
-    metric='bbox',
-    format_only=True, # 必须为 True，因为 Test 集没有真值标签
-    outfile_prefix='work_dirs/round5_final_submission/results')
+    format_only=True,
+    outfile_prefix='results_test',
+    backend_args=None)
+
